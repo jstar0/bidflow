@@ -31,3 +31,14 @@ settlement or order payloads that do not match the replayed bids. This is an
 internal-consistency check only; the local JSON format is not signed or an
 authenticated event store. See [design decisions](docs/design-decisions.md) for
 the remaining limits.
+
+## Verification
+
+```bash
+uv run pytest
+uv run --with ruff ruff check src tests
+uv lock --check
+uv build
+```
+
+The state machine is an independent implementation of a general event-driven commerce problem. It does not copy client code, schemas, credentials, or customer records. MIT licensed; see [LICENSE](LICENSE).
