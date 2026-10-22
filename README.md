@@ -29,8 +29,7 @@ Replay verifies more than event order: it rejects duplicate event IDs,
 aggregate/payload mismatches, orphan bids, invalid lifecycle transitions, and
 settlement or order payloads that do not match the replayed bids. This is an
 internal-consistency check only; the local JSON format is not signed or an
-authenticated event store. See [design decisions](docs/design-decisions.md) for
-the remaining limits.
+authenticated event store.
 
 ## Verification
 
